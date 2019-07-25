@@ -10,6 +10,8 @@ public class LoginController {
 	
 	@RequestMapping("/hello")
 	public String sayHello(){
+
+		System.out.println("ok");
 		return "springboot app a";
 	}
 }
