@@ -14,6 +14,8 @@ public class LoginController {
 		System.out.println("此处要冲突");
 		System.out.println("此处要冲突");
 		
+
+		System.out.println("ok");
 		return "springboot app a";
 	}
 }
