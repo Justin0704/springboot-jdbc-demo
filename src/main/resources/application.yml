@@ -1,2 +1,22 @@
 server:
   port: 8082
+spring:
+  datasource:
+    hikari:
+      connection-timeout: 20000
+      maximum-pool-size: 10
+      minimum-idle: 5
+    type: com.zaxxer.hikari.HikariDataSource # 配置当前要使用的数据源的操作类型
+    driverClassName: com.mysql.jdbc.Driver # 配置MySQL的驱动程序类
+    url: jdbc:mysql://localhost:3306/test?serverTimezone=GMT%2B8 # 数据库连接地址
+    username: root # 数据库用户名
+    password: 123456
+logging:
+  level:
+    org:
+      springframework: info
+    com:
+      spring:
+        jdbc:
+          demo: info
+    root: error
