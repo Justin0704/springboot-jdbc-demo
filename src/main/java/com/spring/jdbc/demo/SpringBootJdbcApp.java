@@ -48,7 +48,6 @@ public class SpringBootJdbcApp implements CommandLineRunner{
                 new Book("Getting Clojure", new BigDecimal("37.3")),
                 new Book("Head First Android Development", new BigDecimal("41.19"))
         );
-
         log.info("保存");
         books.forEach(book -> {
             log.info("save...{}",book.getName());
