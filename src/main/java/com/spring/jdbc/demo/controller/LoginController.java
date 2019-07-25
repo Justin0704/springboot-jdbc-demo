@@ -10,7 +10,6 @@ public class LoginController {
 	
 	@RequestMapping("/hello")
 	public String sayHello(){
-		
-		return "springboot app";
+		return "springboot app a";
 	}
 }
